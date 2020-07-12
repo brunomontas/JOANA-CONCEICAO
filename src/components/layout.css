@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+
+
+/*****************************/
+/* HOMEPAGE                  */
+/*****************************/
+
+
+.homepage {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+    display: flex;
+}
+
+.about {
+    width: 10%;
+}
+
+.about-wraper {
+    width: 100%;
+}
+
+.homepage-main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tumblr {
+    width: 10%;
+    display: flex;
+}
+
+.tumblr-wraper {
+    width: 100%;
+    align-self: flex-end;
+}
+
+.main-top {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-top-center {
+    width: 50%;
+    align-self: flex-end;
+}
+
+.main-bottom {
+    height: 60%;
+    display: flex;
+}
+
+.main-center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-center-image {
+    width: 50%;
+    height: 50%;
+}
+
+.main-left {
+    width: 25%;
+}
+
+.main-right {
+    width: 25%;
+    ;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-right-top {
+    height: 50%;
+}
+
+.main-right-bottom {
+    height: 50%;
+}
+
+.circle-animation {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .homepage {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        height: 90%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        width: 100%;
+        height: 10%;
+    }
+
+    .about-wraper {
+        width: 20%;
+        height: 100%;
+    }
+
+    .homepage-main {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tumblr {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .tumblr-wraper {
+        width: 20%;
+        align-self: flex-end;
+    }
+
+    .main-top {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-top-center {
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .main-bottom {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-center {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-center-image {
+        height: 100%;
+    }
+
+    .main-left {
+        height: 25%;
+        width: 100%;
+        display: flex;
+    }
+
+    .circle-animation {
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-right {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-right-top {
+        height: 50%;
+        width: 50%;
+        margin: auto;
+    }
+
+    .main-right-bottom {
+        height: 50%;
+        width: 50%;
+        margin: auto;
+    }
+
+}
+
+
+/* CSS animations */
+
+.rotate {
+    animation: rotation 5s infinite linear;
+}
+
+.blink {
+    animation: blinker 3s linear infinite;
+}
+
+#circle-one {
+    animation: rotation2 8s infinite linear;
+    transform-origin: center center;
+}
+
+#circle-two {
+    animation: rotation 8s infinite linear;
+    transform-origin: center center;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
