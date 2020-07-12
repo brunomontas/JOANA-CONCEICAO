@@ -12,42 +12,42 @@ const getImages = graphql`
   about:file(relativePath: {eq: "about.png"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
    arquivo: file(relativePath: {eq: "arquivo.png"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
    labirinto: file(relativePath: {eq: "labirinto.png"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
    parede: file(relativePath: {eq: "parede.png"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
     tmbr:file(relativePath: {eq: "tmbr.png"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
     tropa:file(relativePath: {eq: "tropa.png"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp_tracedSVG
       }
     }
   }
