@@ -57,9 +57,7 @@ const getImages = graphql`
 
 function openAbout() {
   const aboutWindow = document.querySelector('.about-window');
-  aboutWindow.style.display = 'block';
-  aboutWindow.style.opacity = 1;
-  aboutWindow.style.transform = 'scale(1)';
+  aboutWindow.classList.add("open-about");
 
 }
 

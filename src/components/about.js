@@ -16,9 +16,7 @@ const query = graphql`
 
 function closebout() {
     const aboutWindow = document.querySelector('.about-window');
-    aboutWindow.style.display = 'none';
-    aboutWindow.style.opacity = 0;
-    aboutWindow.style.transform = 'scale(0)';
+    aboutWindow.classList.remove("open-about");
   
   }
 
