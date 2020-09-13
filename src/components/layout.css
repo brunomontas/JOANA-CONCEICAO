@@ -405,9 +405,11 @@ height: 100%;
 .temple-entrance {
     display: flex;
     flex:2;
+    position: relative;
 }
 
-.temple-entrance iframe {
+.temple-entrance-stage {
+    position: absolute;
     width: calc(100% - 40px);
     height: calc(100% - 40px);
     margin-top: 20px;
@@ -420,6 +422,20 @@ height: 100%;
 
 .temple-base {
     margin-bottom: -6%
+}
+
+
+.temple-video {
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.temple-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 

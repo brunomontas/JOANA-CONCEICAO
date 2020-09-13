@@ -4,10 +4,7 @@ import TempleTop from "../images/temple-top.svg"
 import TempleColumn from "../images/temple-column.svg"
 
 
-
-
-
-const temple = ({ videoSrcURL, videoTitle }) => {
+const temple = ({ children }) => {
   return (
 
     <div className="temple">
@@ -17,15 +14,9 @@ const temple = ({ videoSrcURL, videoTitle }) => {
       <div className="temple-middle">
         <img src={TempleColumn} alt="temple column" style={{ height: '100%' }} className="left-column" />
         <div className="temple-entrance">
-            <iframe
-              src={videoSrcURL}
-              title={videoTitle}
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              frameBorder="0"
-              webkitallowfullscreen="true"
-              mozallowfullscreen="true"
-              allowFullScreen
-            />
+            <div className="temple-entrance-stage " >
+              {children}
+            </div>
         </div>
         <img src={TempleColumn} alt="temple column" style={{ height: '100%' }} className="right-column" />
       </div>
