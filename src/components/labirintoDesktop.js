@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 const labirintoDesktop = () => {
   return (
-    <div className="svg-wrapper">
+    <div className="svg-wrapper desktop-display">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1371.47 757.49">
         <g id="Layer_2" data-name="Layer 2">
           <g id="labirinto">
@@ -77,25 +77,25 @@ const labirintoDesktop = () => {
           </g>
           <g id="entradas_do_labirinto" data-name="entradas do labirinto">
             <Link to='/berço-venus/'>
-            <circle id="berço-de-venus" cx="472.23" cy="155.01" r="11.57" style={{fill: '#fae5ea'}} />
+            <circle id="berço-de-venus" className="labirinto-link-desktop" cx="472.23" cy="155.01" r="11.57" style={{fill: '#fae5ea'}} />
             </Link>
             <Link to='/guia-interior/'>  
-            <ellipse id="guia-interior" cx="665.64" cy="15.36" rx="18.09" ry="5.5" style={{fill: '#fae5ea'}} />
+            <ellipse id="guia-interior" className="labirinto-link-desktop" cx="665.64" cy="15.36" rx="18.09" ry="5.5" style={{fill: '#fae5ea'}} />
             </Link>
             <Link to='/mente-certa/'>
-            <circle id="mente-certa" cx="983.66" cy="393.92" r="15.98" style={{fill: '#fae5ea'}} />
+            <circle id="mente-certa" className="labirinto-link-desktop" cx="983.66" cy="393.92" r="15.98" style={{fill: '#fae5ea'}} />
             </Link>
-            <Link to='/mundo-sem-ordem/'>
-            <circle id="mundo-sem-ordem" cx="768.77" cy="454.39" r="24.48" style={{fill: '#fae5ea'}} />
+            <Link to='/mundo-sem-origem/'>
+            <circle id="mundo-sem-origem" className="labirinto-link-desktop" cx="768.77" cy="454.39" r="24.48" style={{fill: '#fae5ea'}} />
             </Link>
             <Link to='/sintese-radiante/'>
-            <ellipse id="sintese-radiante" cx="501.28" cy="294.91" rx="17.48" ry="19.75" style={{fill: '#fae5ea'}} />
+            <ellipse id="sintese-radiante" className="labirinto-link-desktop" cx="501.28" cy="294.91" rx="17.48" ry="19.75" style={{fill: '#fae5ea'}} />
             </Link>
             <Link to='/toda-materia/'>
-            <rect id="toda-materia" x="418.27" y="437.19" width="22.24" height="46.78" style={{fill: '#fae5ea'}} />
+            <rect id="toda-materia" className="labirinto-link-desktop" x="418.27" y="437.19" width="22.24" height="46.78" style={{fill: '#fae5ea'}} />
             </Link>
             <Link to='/verbo-sideral/'>
-            <rect id="verbo-sideral" x="215.81" y="433.63" width={31} height="44.19" style={{fill: '#fae5ea'}} />
+            <rect id="verbo-sideral" className="labirinto-link-desktop" x="215.81" y="433.63" width={31} height="44.19" style={{fill: '#fae5ea'}} />
             </Link>
           </g>
         </g>

@@ -26,7 +26,7 @@ body {
 }
 
 .about {
-    width: 10%;
+    width: 8%;
 }
 
 .about-wraper {
@@ -101,6 +101,33 @@ body {
     width: 50%;
     margin: auto;
 }
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation 3s infinite;
+     -moz-animation: flickerAnimation 3s infinite;
+     -o-animation: flickerAnimation 3s infinite;
+      animation: flickerAnimation 3s infinite;
+  }
 
 @media only screen and (max-width: 600px) {
 
@@ -265,20 +292,8 @@ body {
 /* LABIRINTO                 */
 /*****************************/
 
-
-.flexbox-page {height: 100vh;width: 100vw;display: flex;justify-content: center; align-items: center;}
-.flexbox-container {display: flex; flex: 1; height: 95%;width: 95%;}
-.flexbox-container svg{height: 100%;width: 100%;}
-.flexbox-container-mobile {display: flex; flex: 1; height: 100%;width: 100%;}
-.flexbox-container-mobile svg{height: 100%;width: 100%;}
-.flexbox-page-mobile {height: 100vh;width: 100vw;display: flex;justify-content: center; align-items: center; flex-direction: column;}
-
-
 .desktop-display {}
 .mobile-display {display: none;}
-.mobile-labirinto-top {display: flex;flex-direction: column;}
-.mobile-labirinto-middle {flex: 1;display: flex;flex-direction: column;align-items: center;justify-content: center;}
-.mobile-labirinto-bottom {display: flex;flex-direction: column; margin-bottom: -2px;}
 .labirinto-link-desktop{ transition: all 0.5s ease-in-out;}
 .labirinto-link-desktop:hover{ fill: rgb(212, 126, 146) !important;}
 .labirinto-link { animation: color_change 2s infinite alternate;}  
@@ -294,40 +309,9 @@ body {
 }
 
 
-#video-container iframe {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-
-}
-
-#video-container video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    }
-
-#video-container body {
-    position: fixed;
-    top: 0;
-   left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    
-    }
-
-#video-container {
-    z-index: -2;
-    position: absolute;
-}
-
-
-
+/*****************************/
+/* HOMEPAGE                    */
+/*****************************/
 .navigator {
     position: absolute;
     top: 10px;
@@ -443,8 +427,6 @@ height: 100%;
     width: 100%;
     height: 100%;
 }
-
-
 .svg-wrapper {
     height: 100%;
     width: 100%;

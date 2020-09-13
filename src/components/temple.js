@@ -12,13 +12,13 @@ const temple = ({ children }) => {
         <img src={TempleTop} alt="temple top" />
       </div>
       <div className="temple-middle">
-        <img src={TempleColumn} alt="temple column" style={{ height: '100%' }} className="left-column" />
+        <img src={TempleColumn} alt="temple column" style={{ height: '100%' }} className="left-column desktop-display" />
         <div className="temple-entrance">
             <div className="temple-entrance-stage " >
               {children}
             </div>
         </div>
-        <img src={TempleColumn} alt="temple column" style={{ height: '100%' }} className="right-column" />
+        <img src={TempleColumn} alt="temple column" style={{ height: '100%' }} className="right-column desktop-display" />
       </div>
         <div className="temple-base">
           <img src={TempleBase} alt="temple base" />
