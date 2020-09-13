@@ -71,7 +71,7 @@ export default ()=> {
     <Layout>
       <div className="homepage">
         <div className="about">
-          <div className="about-wraper" onClick={() => openAbout()}>
+          <div className="about-wraper" onClick={() => openAbout()}  role = "button" >
           <Image fluid={data.about.childImageSharp.fluid} className="rotate" style={{maxHeight: '100%'}} imgStyle={{objectFit: 'contain'}}></Image>
           </div>
         </div>
@@ -95,7 +95,7 @@ export default ()=> {
               </div>
               <div className="main-right">
                 <div className="main-right-top">
-                  <a href="https://tropamacaca.com/" target="_blank">
+                  <a href="https://tropamacaca.com/" target="_blank" rel="noreferrer">
                 <Image fluid={data.tropa.childImageSharp.fluid} style={{maxHeight: '100%'}} imgStyle={{objectFit: 'contain'}}></Image>
                   </a>
                 </div>
@@ -107,7 +107,7 @@ export default ()=> {
           </div>
           <div className="tumblr">
             <div className="tumblr-wraper">
-              <a href="https://joanadaconceicao.tumblr.com/" target="_blank">
+              <a href="https://joanadaconceicao.tumblr.com/" target="_blank" rel="noreferrer">
               <Image fluid={data.tmbr.childImageSharp.fluid} className="blink" ></Image>
               </a>
             </div>

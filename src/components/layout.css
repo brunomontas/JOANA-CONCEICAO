@@ -4,8 +4,8 @@
 html,
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0px;
 }
 
@@ -294,29 +294,39 @@ body {
 }
 
 
-#video-container{
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-    z-index: -2;
-}
 #video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    }
-#palco {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    z-index: 2;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
 }
+
+#video-container video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    }
+
+#video-container body {
+    position: fixed;
+    top: 0;
+   left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    
+    }
+
+#video-container {
+    z-index: -2;
+    position: absolute;
+}
+
+
 
 .navigator {
     position: absolute;
@@ -356,9 +366,61 @@ body {
 .close-icon {
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .open-about {
     bottom: 0 !important;
 
 }
+
+
+/*****************************/
+/* TEMPLE                    */
+/*****************************/
+.temple {
+   
+  display: flex;
+  flex:1;
+  flex-direction: column; 
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.temple-middle {
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  margin-top: -4px;
+}
+
+.left-column {
+    margin-left: 20px;
+}
+
+.right-column {
+    margin-right: 20px;
+}
+
+.temple-entrance {
+    display: flex;
+    flex:2;
+}
+
+.temple-entrance iframe {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.temple-top {
+    margin-top: -4%;
+}
+
+.temple-base {
+    margin-bottom: -6%
+}
+
+
+

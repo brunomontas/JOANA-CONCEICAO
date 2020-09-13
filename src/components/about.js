@@ -14,7 +14,7 @@ const query = graphql`
   }
 `
 
-function closebout() {
+function closeAbout() {
     const aboutWindow = document.querySelector('.about-window');
     aboutWindow.classList.remove("open-about");
   
@@ -24,10 +24,8 @@ export default ()=> {
     const data = useStaticQuery(query)
     return (
         <div className="about-window">
-            <div className="about-window-close ">
-                <a href="#" onClick={() => closebout()}>
-                <Image fluid={data.close.childImageSharp.fluid} className="close-icon" ></Image>
-                </a>
+            <div className="about-window-close "  onClick={() => closeAbout()} role = "button"  >
+                <Image fluid={data.close.childImageSharp.fluid} className="close-icon"  ></Image>
             </div>
             <div className="about-window-content">
                 <h1>ABOUT</h1>
