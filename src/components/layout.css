@@ -34,6 +34,42 @@ body {
     cursor: pointer;
 }
 
+.about-window {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    bottom: -100vw;
+    overflow:hidden;
+    background-color: red;
+    box-shadow: 5px 5px 10px grey;
+    position: absolute;
+    z-index: 11;
+    opacity: 0;
+    -webkit-transition: all 1.5s ease-in-out 0.4s;
+   transition: all 1.5s ease-in-out 0.4s;
+   transition-timing-function: ease-in-out;
+}
+
+.about-window.open-about{
+    opacity: 1;
+    bottom: 0;
+}
+
+.about-window-content{
+    padding: 40px;
+    max-width: 800px;
+    position: relative;
+}
+
+.close-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+
 .homepage-main {
     width: 80%;
     display: flex;
@@ -101,33 +137,6 @@ body {
     width: 50%;
     margin: auto;
 }
-
-@keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-o-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  .animate-flicker {
-     -webkit-animation: flickerAnimation 3s infinite;
-     -moz-animation: flickerAnimation 3s infinite;
-     -o-animation: flickerAnimation 3s infinite;
-      animation: flickerAnimation 3s infinite;
-  }
 
 @media only screen and (max-width: 600px) {
 
@@ -245,10 +254,6 @@ body {
     animation: rotation 5s infinite linear;
 }
 
-.blink {
-    animation: blinker 3s linear infinite;
-}
-
 #circle-one {
     animation: rotation2 8s infinite linear;
     transform-origin: center center;
@@ -258,6 +263,13 @@ body {
     animation: rotation 8s infinite linear;
     transform-origin: center center;
 }
+
+.animate-flicker {
+    -webkit-animation: flickerAnimation 3s infinite;
+    -moz-animation: flickerAnimation 3s infinite;
+    -o-animation: flickerAnimation 3s infinite;
+     animation: flickerAnimation 3s infinite;
+ }
 
 @keyframes rotation {
     from {
@@ -279,14 +291,32 @@ body {
     }
 }
 
-
 @keyframes blinker {
     50% {
         opacity: 0;
     }
 }
 
-
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
 
 /*****************************/
 /* LABIRINTO                 */
@@ -309,70 +339,34 @@ body {
 }
 
 
-/*****************************/
-/* HOMEPAGE                    */
-/*****************************/
-.navigator {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 0; 
-    height: 0; 
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent; 
-    border-right:30px solid rgb(159, 129, 230); 
-  }
-
-
-  .about-window {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    bottom: -110vh;
-    left: 0;
-    background-color: red;
-    z-index: 999;
-    opacity: 1;
-    transition: all 1s ease-in-out 0.4s;
-    transition-timing-function: ease-in-out;
-  }
-
-.about-window-content{
-    padding: 10px;
-}
-
-.about-window-close {
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.close-icon {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-
-.open-about {
-    bottom: 0 !important;
-
-}
-
 
 /*****************************/
 /* TEMPLE                    */
 /*****************************/
+
+.navigator {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 40px; 
+    height: 40px; 
+    
+  } 
+
 .temple {
-   
   display: flex;
   flex:1;
-  flex-direction: column; 
   height: 100vh;
   width: 100vw;
+  flex-direction: column; 
   overflow: hidden;
+  margin: 0 auto;
+  width: inherit;
 }
+
 .temple-middle {
   display: flex;
+  
   flex:1;
   flex-direction: row;
   margin-top: -4px;
@@ -432,4 +426,32 @@ body {
     width: 100%;
 }
 
+/*****************************/
+/* coming soon               */
+/*****************************/
 
+
+.comming-soon {
+    max-width: 500px;
+    margin:  50px auto;
+    text-align: center;
+}
+
+.sintese-caçador-futuro {
+    height: 30%;
+}
+.sintese-image-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.sintese-image-wrapper > *{
+    flex: 2;
+}
+
+.sintese-caçador-futuro {
+    flex:1;
+    margin-bottom: 20px;
+}
