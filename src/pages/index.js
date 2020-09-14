@@ -7,7 +7,7 @@ import Tropa from '../images/tropa.svg'
 import Arquivo from '../images/arquivo.svg'
 import Parede from '../images/parede.svg'
 import Labirinto from '../images/labirinto.svg'
-import AboutIcon from '../images/about.svg'
+import AboutIcon from '../images/about-icon.svg'
 import Tumblr from '../images/tumblr.svg'
 
 
