@@ -26,7 +26,7 @@ body {
 }
 
 .about {
-    width: 8%;
+    width: 5%;
 }
 
 .about-wraper {
@@ -110,8 +110,8 @@ body {
 }
 
 .main-center-image {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 .main-left {
@@ -119,10 +119,10 @@ body {
 }
 
 .main-right {
-    width: 25%;
-    ;
+    width: 23%;
     display: flex;
     flex-direction: column;
+    margin: 2%
 }
 
 .main-right-top {
@@ -134,7 +134,7 @@ body {
 }
 
 .circle-animation {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -235,14 +235,25 @@ body {
 
     .main-right-top {
         height: 50%;
-        width: 50%;
-        margin: auto;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
     }
 
     .main-right-bottom {
         height: 50%;
         width: 50%;
         margin: auto;
+        margin-top: 5%;
+    }
+
+    .navigator {
+        position: absolute;
+        top: unset !important;
+        bottom: 60px;
+        left: calc(50% - 20px) !important;
+        width: 40px;
+        height: 40px;
     }
 
 }
@@ -432,10 +443,16 @@ body {
 
 
 .comming-soon {
-    max-width: 500px;
-    margin:  50px auto;
+ 
+    margin:  0px auto;
     text-align: center;
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
 }
+
+
 
 .sintese-caçador-futuro {
     height: 30%;
@@ -454,4 +471,13 @@ body {
 .sintese-caçador-futuro {
     flex:1;
     margin-bottom: 20px;
+}
+
+
+.soon {
+    background: url("../images/soon.svg");
+    background-color: #000;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 }

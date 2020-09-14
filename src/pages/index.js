@@ -59,7 +59,7 @@ export default () => {
             </div>
             <div className="main-center">
               <div className="main-center-image">
-                <Link to="/coming-soon/">
+                <Link to="/coming-soon-2/">
                   <img src={Parede} style={{ maxHeight: '100%' }} imgStyle={{ objectFit: 'contain' }} alt="parede" />
                 </Link>
               </div>
@@ -72,7 +72,7 @@ export default () => {
                 </a>
               </div>
               <div className="main-right-bottom">
-                <Link to="coming-soon">
+                <Link to="coming-soon-1">
                   <img src={Arquivo} style={{ maxHeight: '100%' }} imgStyle={{ objectFit: 'contain' }} alt="arquivo"/>
                 </Link>
               </div>
