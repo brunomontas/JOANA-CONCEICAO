@@ -49,7 +49,7 @@ const query = graphql`
 const Carroussel = () => {
 
     const data = useStaticQuery(query)
-    const carrousselImages = [data.sintese1, data.sintese2, data.sintese3, data.sintese5]
+    const carrousselImages = [data.sintese1, data.sintese2, data.sintese3, data.sintese4,data.sintese5]
     const [value, setValue] = React.useState(0)
 
     return <div>
@@ -68,7 +68,7 @@ const Carroussel = () => {
                 </div>
                 <div className="carroussel-bottom-right">
                 <img src={forwardIcon} alt="caçador do futuro" onClick={() => {
-                        if (value < (carrousselImages.length - 1)) { setValue(value + 1) }}} />
+                        if (value < (carrousselImages.length-1)) { setValue(value + 1) }}} />
                 </div>
             </div>
         </div>
