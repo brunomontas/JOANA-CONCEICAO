@@ -73,7 +73,7 @@ export default () => {
               </div>
               <div className="main-right-bottom">
                 <Link to="coming-soon-1">
-                  <img src={Arquivo} style={{ maxHeight: '100%' }} imgStyle={{ objectFit: 'contain' }} alt="arquivo"/>
+                  <img src={Arquivo} style={{ maxHeight: '100%' }} imgStyle={{ objectFit: 'contain' }} alt="arquivo" />
                 </Link>
               </div>
             </div>

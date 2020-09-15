@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../components/layout.js'
 import Navigator from "../components/navigationLaberith"
 import Temple from "../components/temple"
-import Video from "../components/video"
+import VideoLink from "../images/mentecerta.mp4"
 
 
 
@@ -11,12 +11,12 @@ export default () => {
     <Navigator></Navigator>
     <Layout>
       <Temple>
-        <Video
-          videoSrcURL="https://www.youtube.com/embed/B26Z6hlrePo?autoplay=1"
-          videoTitle="Mente certa"
-        />
+        <div className="player-overlay ">
+          <video controls  autoPlay>
+            <source src={VideoLink} type="video/mp4" />
+          </video>
+        </div>
       </Temple>
     </Layout>
   </div>
-
 }

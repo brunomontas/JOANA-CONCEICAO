@@ -29,7 +29,7 @@ export default ()=> {
         <Navigator></Navigator>
         <Layout>
             <div className="comming-soon">
-            <img src={defaultImage} alt="teste"/>
+              <img src={defaultImage} alt="teste"/>
             </div>
         </Layout>
         </div>
