@@ -483,13 +483,24 @@ body {
 
 
 .soon {
-    background: url("../images/soon.svg");
     background-color: #000;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
+    align-items: center;
+    justify-content: center;
 }
 
+.soon-2 {
+    flex: 1;
+    height: 90%;
+}
+
+.soon-3 {
+    display: flex;
+    flex: 1;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 .player-overlay {
     position: absolute;
     top: 0;

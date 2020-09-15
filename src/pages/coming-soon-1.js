@@ -10,8 +10,8 @@ const query = graphql`
   {
     joana:file(relativePath: {eq: "arquivo.jpeg"}) {
       childImageSharp {
-        fluid {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        fluid(maxWidth: 500, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -28,9 +28,17 @@ export default ()=> {
         <div>
         <Navigator></Navigator>
         <Layout>
-            <div className="comming-soon">
-              <img src={defaultImage} alt="teste"/>
+        <div className="soon-3 ">
+          <div className="soon-2">
+              <Image 
+                fluid={data.joana.childImageSharp.fluid}
+                style={{ height: "100%", width: "100%", }}
+                imgStyle={{ objectFit: "contain" , objectPosition: "top center"}}
+                alt="coming soon"
+              />
+          </div>
             </div>
+
         </Layout>
         </div>
     )

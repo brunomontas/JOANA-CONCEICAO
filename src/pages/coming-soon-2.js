@@ -13,7 +13,9 @@ export default ()=> {
         <div>
         <Navigator></Navigator>
         <Layout>
-          <div className="temple soon"></div>
+          <div className="temple soon">
+            <img src={imageSoon} alt="soon"/>
+            </div>
         </Layout>
         </div>
     )
