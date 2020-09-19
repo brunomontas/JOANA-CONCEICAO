@@ -4,6 +4,7 @@ import Image from 'gatsby-image'
 import caçador from "../images/cacador.svg"
 import backIcon from "../images/back-icon.svg"
 import forwardIcon from "../images/forward-icon.svg"
+import VideoLink from "../images/ínteseradiante.mp4"
 
 const query = graphql`
 {
@@ -55,20 +56,33 @@ const Carroussel = () => {
     return <div>
         <div className="carroussel">
             <div className="carroussel-top">
+              <a href="https://dunnorecordings.bandcamp.com/album/ca-ador-do-futuro" style={{height: "100%",
+    width: "100%" , textAlign: "center",}} target="_blank" rel="noreferrer">
                 <img src={caçador} alt="caçador do futuro"  />
+              </a>
             </div>
             <div className="carroussel-bottom">
                 <div className="carroussel-bottom-left">
-                        <img src={backIcon} alt="caçador do futuro" onClick={() => {
-                        if (value > 0) { setValue(value - 1) }}} />
+                        <img src={backIcon} className="arrow-left" alt="caçador do futuro" onClick={() => {
+                        if (value > 0) { setValue(value - 1) }
+                        if (value === 0) { setValue(3) }
+                        
+                        }} />
                 </div>
                 <div className="carroussel-bottom-center" >
-                    <Image fluid={carrousselImages[value].childImageSharp.fluid} style={{ height: "100%", width: "100%", }}
-                        imgStyle={{ objectFit: "contain", objectPosition: "top center" }} />
+                  {
+                    value === carrousselImages.length
+                    ? <video controls  autoPlay><source src={VideoLink} type="video/mp4" /></video>
+                    :<Image fluid={carrousselImages[value].childImageSharp.fluid} style={{ height: "100%", width: "100%", }}
+                    imgStyle={{ objectFit: "contain", objectPosition: "top center" }} />
+                  }
+                    
                 </div>
                 <div className="carroussel-bottom-right">
-                <img src={forwardIcon} alt="caçador do futuro" onClick={() => {
-                        if (value < (carrousselImages.length-1)) { setValue(value + 1) }}} />
+                <img src={forwardIcon} className="arrow-right" alt="caçador do futuro" onClick={() => {
+                        if (value < 5) { setValue(value + 1) }
+                        if (value === 5) { setValue(0) }
+                        }} />
                 </div>
             </div>
         </div>
@@ -77,6 +91,3 @@ const Carroussel = () => {
 }
 
 export default Carroussel
-
-
-

@@ -563,6 +563,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        position: relative;
     }
 
     .carroussel-bottom-right {
@@ -570,7 +571,22 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        position: relative;
     }
 
-    
+
+    .arrow-left, .arrow-right {
+
+        position: absolute;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .arrow-left {
+        right:0;
+    }
+
+    .arrow-right {
+        left:0;
+    }
 
