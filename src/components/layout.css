@@ -590,3 +590,11 @@ body {
         left:0;
     }
 
+
+    .audio-play-image {
+        cursor: pointer;
+    }
+
+    .audio-play-image:hover {
+        opacity:0.5;
+    }
