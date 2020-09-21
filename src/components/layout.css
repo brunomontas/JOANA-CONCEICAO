@@ -280,6 +280,12 @@ body {
         width: 30px;
         height:30px
     }
+
+    .about-window-content {
+        padding: 20% 5%;
+        max-width: 800px;
+        position: relative;
+        }
 }
 
 
