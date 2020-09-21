@@ -30,7 +30,9 @@ export default () => {
     
     <Layout>
     <div className="about-window">
-            <img src={closeIcon} className="close-icon" onClick={() => openCloseAbout()} role = "button" alt="close"/>
+            <div onClick={() => openCloseAbout()} role="button" className="close-icon">
+            <img src={closeIcon} className="close-icon"  alt="close"/>
+            </div>
             <div className="about-window-content">
                 <h1>Joana da Conceição</h1>
                 <h3>Joana da Conceição is an artist living and working in Lisbon. Her thinking and practice is rooted in painting and music, with the public presentations of her work revolving between the two.</h3>
@@ -72,7 +74,7 @@ export default () => {
                 </a>
               </div>
               <div className="main-right-bottom">
-                <Link to="coming-soon-1">
+                <Link to="/coming-soon-1/">
                   <img src={Arquivo} style={{ maxHeight: '100%' }} imgStyle={{ objectFit: 'contain' }} alt="arquivo" />
                 </Link>
               </div>
