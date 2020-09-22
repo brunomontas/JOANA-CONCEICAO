@@ -3,6 +3,7 @@ import LabirintoDesktop from '../components/labirintoDesktop'
 import LabirintoMobile from '../components/labirintomobile'
 import Navigator from "../components/navigation"
 import Temple from "../components/temple"
+import './layout.css'
 
 
 

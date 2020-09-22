@@ -4,6 +4,7 @@ import {graphql, useStaticQuery } from 'gatsby'
 import Image from "gatsby-image"
 import Navigator from "../components/navigation"
 import defaultImage from "../images/arquivo.jpeg"
+import './layout.css'
 
 
 const query = graphql`

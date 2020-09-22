@@ -9,6 +9,7 @@ import Labirinto from '../images/labirinto.svg'
 import AboutIcon from '../images/about-icon.svg'
 import Tumblr from '../images/tumblr.svg'
 import closeIcon from "../images/close-icon.svg"
+import './layout.css'
 
 
 

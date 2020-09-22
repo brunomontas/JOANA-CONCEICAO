@@ -3,6 +3,7 @@ import Layout from '../components/layout.js'
 import Navigator from "../components/navigationLaberith"
 import Temple from "../components/temple"
 import VideoLink from "../images/interior.mp4"
+import './layout.css'
 
 
 
