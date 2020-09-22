@@ -367,47 +367,11 @@ body {
     }
 }
 
-@-o-keyframes flickerAnimation {
-    0% {
-        opacity: 1;
-    }
 
-    50% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
 
-@-moz-keyframes flickerAnimation {
-    0% {
-        opacity: 1;
-    }
 
-    50% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes flickerAnimation {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 /*****************************/
 /* LABIRINTO                 */
@@ -428,18 +392,27 @@ body {
 }
 
 .labirinto-link {
-    animation: color_change 2s infinite alternate;
-}
+    -webkit-animation: flickerAnimation2 3s infinite;
+    -moz-animation: flickerAnimation2 3s infinite;
+    -o-animation: flickerAnimation2 3s infinite;
+    animation: flickerAnimation2 3s infinite;
+    
 
-@keyframes color_change {
-    from {
-        fill: rgb(212, 126, 146);
+}
+@keyframes flickerAnimation2 {
+    0% {
+        opacity: 0.8;
     }
 
-    to {
-        fill: rgb(250, 229, 234);
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.8;
     }
 }
+
 
 @media only screen and (max-width: 800px) {
     .desktop-display {

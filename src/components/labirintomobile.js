@@ -54,25 +54,25 @@ const labirintomobile = () => {
           </g>
           <g id="entradas_do_labirinto" data-name="entradas do labirinto">
           <Link to='/berço-venus/'>
-            <polygon id="berço-de-venus" className="labirinto-link" points="471.87 894.51 471.87 908.4 499.63 908.4 499.63 933.58 472.51 933.9 472.53 947.38 594.84 947.38 594.9 933.9 567.73 934.18 567.73 908.4 595.5 908.4 595.5 894.51 471.87 894.51" style={{fill: '#fae5ea'}} />
+            <polygon id="berço-de-venus" className="labirinto-link" points="471.87 894.51 471.87 908.4 499.63 908.4 499.63 933.58 472.51 933.9 472.53 947.38 594.84 947.38 594.9 933.9 567.73 934.18 567.73 908.4 595.5 908.4 595.5 894.51 471.87 894.51" style={{fill: '#ec98ac'}} />
             </Link>
             <Link to='/guia-interior/'>  
-            <path id="guia-interior" className="labirinto-link" d="M41,851c40.73-1.18,72.27-29.88,71.7-75.09-.57,45.21,30.77,73.91,71.5,75.09v23.82l-142.9.35Z" style={{fill: '#fae5ea'}} />
+            <path id="guia-interior" className="labirinto-link" d="M41,851c40.73-1.18,72.27-29.88,71.7-75.09-.57,45.21,30.77,73.91,71.5,75.09v23.82l-142.9.35Z" style={{fill: '#ec98ac'}} />
             </Link>
             <Link to='/mente-certa/'>
-            <path id="mente-certa" className="labirinto-link" d="M535.14,733.33c7.91,9,19.37,17.8,37.75,23.32a104.35,104.35,0,0,0,47.81,2.82c-7.07,21.85-22,61.35-88.53,61.35s-83.51-41.66-88.61-62.57a105.25,105.25,0,0,0,53.86-1.74c18.39-5.52,29.81-14.22,37.72-23.18Z" style={{fill: '#fae5ea'}} />
+            <path id="mente-certa" className="labirinto-link" d="M535.14,733.33c7.91,9,19.37,17.8,37.75,23.32a104.35,104.35,0,0,0,47.81,2.82c-7.07,21.85-22,61.35-88.53,61.35s-83.51-41.66-88.61-62.57a105.25,105.25,0,0,0,53.86-1.74c18.39-5.52,29.81-14.22,37.72-23.18Z" style={{fill: '#ec98ac'}} />
             </Link>
             <Link to='/mundo-sem-origem/'>
-            <path id="mundo-sem-origem" className="labirinto-link" d="M501.4,208.56s24.76-8.8,27.19-16.94A86.39,86.39,0,0,0,531.65,176a.57.57,0,0,1,.55-.53.57.57,0,0,1,.56.54,79.87,79.87,0,0,0,3,15.6c2.45,8.13,27.19,16.94,27.19,16.94-6.72-2.68-17.66,7.71-21.59,25.05-3.23,14.23-8.7,29.17-9.21,44.54-.58-15.12-6-30.53-9.21-44.54-3.93-17.34-14.55-27.86-21.59-25.05" style={{fill: '#fae5ea'}} />
+            <path id="mundo-sem-origem" className="labirinto-link" d="M501.4,208.56s24.76-8.8,27.19-16.94A86.39,86.39,0,0,0,531.65,176a.57.57,0,0,1,.55-.53.57.57,0,0,1,.56.54,79.87,79.87,0,0,0,3,15.6c2.45,8.13,27.19,16.94,27.19,16.94-6.72-2.68-17.66,7.71-21.59,25.05-3.23,14.23-8.7,29.17-9.21,44.54-.58-15.12-6-30.53-9.21-44.54-3.93-17.34-14.55-27.86-21.59-25.05" style={{fill: '#ec98ac'}} />
             </Link>
             <Link to='/sintese-radiante/'>
-            <path id="sintese-radiante" className="labirinto-link" d="M344.75,279.76c-29.86,0-54.33,24.63-56.71,55.95h30.71c2.19-13.42,13-23.62,26-23.62,14.59,0,26.41,12.82,26.41,28.63s-11.82,28.64-26.41,28.64c-9.52,0-17.86-5.47-22.51-13.66H289.57c6.23,26.42,28.57,46,55.18,46,31.44,0,56.93-27.29,56.93-61S376.19,279.76,344.75,279.76Z" style={{fill: '#fae5ea'}} />
+            <path id="sintese-radiante" className="labirinto-link" d="M344.75,279.76c-29.86,0-54.33,24.63-56.71,55.95h30.71c2.19-13.42,13-23.62,26-23.62,14.59,0,26.41,12.82,26.41,28.63s-11.82,28.64-26.41,28.64c-9.52,0-17.86-5.47-22.51-13.66H289.57c6.23,26.42,28.57,46,55.18,46,31.44,0,56.93-27.29,56.93-61S376.19,279.76,344.75,279.76Z" style={{fill: '#ec98ac'}} />
             </Link>
             <Link to='/toda-materia/'>
-            <circle id="toda-materia" className="labirinto-link" cx="911.86" cy="896.97" r="25.42" style={{fill: '#fae5ea'}} />
+            <circle id="toda-materia" className="labirinto-link" cx="911.86" cy="896.97" r="25.42" style={{fill: '#ec98ac'}} />
             </Link>
             <Link to='/verbo-sideral/'>
-            <circle id="verbo-sideral" className="labirinto-link" cx="666.83" cy="503.29" r="46.59" style={{fill: '#fae5ea'}} />
+            <circle id="verbo-sideral" className="labirinto-link" cx="666.83" cy="503.29" r="46.59" style={{fill: '#ec98ac'}} />
             </Link>
           </g>
         </g>
