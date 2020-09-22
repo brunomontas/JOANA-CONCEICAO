@@ -297,6 +297,9 @@ body {
         position: relative;
     }
 
+   
+
+    
 
 }
 
@@ -723,5 +726,21 @@ video {
     .carroussel-bottom {
         height: 50%;
     }
+
+    .temple-entrance-stage{
+    
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        margin-top: 10px;
+        margin-left: 10px;
+        display: flex;
+        }
+    
+        .player-overlay {
+        position: relative;
+        height: auto;
+        width: auto;
+        z-index: unset;
+        }
 
 }
