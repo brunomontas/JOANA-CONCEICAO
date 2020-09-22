@@ -9,7 +9,7 @@ const navigation = () => {
             <img src={backIcon} className="navigator" alt="back" /> 
         </Link>
         <Link to="/labirinto/" className="navigator-mobile">
-            <p>← labirinto</p>
+            <p>&lt; back</p>
         </Link>
     </div>
     )

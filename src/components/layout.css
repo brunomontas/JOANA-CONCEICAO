@@ -712,6 +712,10 @@ video {
     opacity: 0.5;
 }
 
+.soon2 {
+    width:100%;
+}
+
 
 @media only screen and (max-width: 800px) {
 
@@ -743,4 +747,9 @@ video {
         z-index: unset;
         }
 
+        .soon2 {
+            width:180%;
+        }
+
 }
+

@@ -12,7 +12,7 @@ export default () => {
     <Layout>
       <Temple>
         <div className="player-overlay ">
-          <video controls  autoPlay playsinline>
+          <video controls  autoPlay muted playsinline>
             <source src={VideoLink} type="video/mp4" />
           </video>
         </div>
